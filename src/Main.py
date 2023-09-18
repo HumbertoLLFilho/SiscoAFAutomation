@@ -12,7 +12,7 @@ from Services.XmlService import CreateXml
 ##      Planilha de Ocorrencias vira uma lista do obj "Ocorrencia", etc...
 ##  - Adicionar os nós e filhos de acordo com os campos de ID dentro de cada um
 
-xls = pd.ExcelFile('C:\\Users\\hleit\\Desktop\\Pessoal\\Dev\\Victor\\Lib\\Files\\SISCOAF.xlsm')
+xls = pd.ExcelFile('..\\Lib\\Files\\SISCOAF.xlsm') # Trocar para o caminho que o excel esta
 
 ocorrenciasDf = pd.read_excel(xls, 'OCORRENCIA')
 enquadramentosDf = pd.read_excel(xls, 'ENQUADRAMENTOS')

@@ -30,7 +30,7 @@ def CreateXml(ocorrencias: list[Ocorrencia]):
     SaveXml(ET.ElementTree(lote), dataReporte)
 
 def SaveXml(tree, fileName):
-    path = f'C:\\Users\\hleit\\Desktop\\Pessoal\\Dev\\Victor\\Lib\\Files\\{fileName}.xml'
+    path = f'..\\Lib\\Files\\{fileName}.xml'
 
     tree.write(path, encoding='iso-8859-1', xml_declaration=True)
 
